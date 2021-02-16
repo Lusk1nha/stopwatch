@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./assets/icons8-stopwatch-40.png"> 
+
+</head>
+
+<body>
+    <div id="content">
+        <div id="stopwatch">
+            <div id="hours" hidden>
+                <h1 class="numbers">00</h1>
+                <h1>:</h1>
+            </div>
+            <h1 class="numbers">00</h1>
+            <h1>:</h1>
+            <h1 class="numbers">00</h1>
+            <h1>.</h1>
+            <h1 class="numbers">00</h1>
+        </div>
+
+        <div id="container-buttons">
+            <button class="button" id="startBtn" onclick="Start()">iniciar</button>
+            <button class="button" id="stopBtn" onclick="Stop()" disabled>parar</button>
+            <button class="button" id="resetBtn" onclick="Reset()" disabled>reiniciar</button>
+
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
